@@ -6,7 +6,7 @@ def double_filter(img): #噪点预处理：双边滤波
     img=cv2.bilateralFilter(img,d=0, sigmaColor=100, sigmaSpace=15)
     return img
 
-def gray_world(img):#灰度世界算法——对比度增强处理
+def gray_world(img):#灰度世界算法——亮度平衡处理
     b=img[:,:,0]
     g=img[:,:,1]
     r=img[:,:,2]
